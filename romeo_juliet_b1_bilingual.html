@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>罗密欧与朱丽叶 · Romeo and Juliet · B1 中文戏剧朗读</title>
+<style>
+  :root {
+    --bg:#f7f5f0; --card:#ffffff; --text:#242424; --muted:#777;
+    --border:#e6e1d8; --accent:#6b4f3a;
+    --rom:#b44a4a; --jul:#8b5aa8; --fri:#3f78a8;
+    --cap:#a56a32; --nurse:#4c8a69; --tyb:#a84d68; --narr:#777;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text);
+         font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC",
+         "Microsoft YaHei",sans-serif; line-height:1.65; }
+  header { background:#fff; border-bottom:1px solid var(--border);
+           padding:28px 18px 20px; text-align:center; position:sticky; top:0; z-index:5; }
+  h1 { margin:0 0 4px; font-size:28px; }
+  .subtitle { color:var(--muted); font-size:14px; }
+  .controls { display:flex; flex-wrap:wrap; gap:8px; justify-content:center; margin-top:16px; }
+  button { border:1px solid var(--border); background:#fff; border-radius:999px;
+           padding:8px 13px; cursor:pointer; font-size:14px; }
+  button.active { background:var(--accent); color:#fff; border-color:var(--accent); }
+  main { max-width:900px; margin:28px auto; padding:0 16px 50px; }
+  .intro { background:#fff; border:1px solid var(--border); border-radius:16px;
+           padding:18px 20px; margin-bottom:22px; }
+  .intro strong { color:var(--accent); }
+  .roles { display:flex; flex-wrap:wrap; gap:7px; margin-top:12px; }
+  .role-filter { border-radius:8px; padding:5px 9px; font-size:12px; }
+  .scene { margin:28px 0 12px; font-size:20px; font-weight:700; }
+  .scene small { display:block; color:var(--muted); font-size:13px; font-weight:400; }
+  .line { background:var(--card); border:1px solid var(--border); border-left:5px solid;
+          border-radius:12px; padding:13px 15px; margin:9px 0; }
+  .speaker { font-weight:800; font-size:14px; margin-bottom:2px; }
+  .zh { font-size:18px; }
+  .pinyin { color:#777; font-size:14px; margin-top:2px; }
+  .en { color:#555; font-size:14px; margin-top:5px; }
+  .hidden { display:none !important; }
+  .rom { border-left-color:var(--rom); } .rom .speaker{color:var(--rom)}
+  .jul { border-left-color:var(--jul); } .jul .speaker{color:var(--jul)}
+  .fri { border-left-color:var(--fri); } .fri .speaker{color:var(--fri)}
+  .cap { border-left-color:var(--cap); } .cap .speaker{color:var(--cap)}
+  .nurse { border-left-color:var(--nurse); } .nurse .speaker{color:var(--nurse)}
+  .tyb { border-left-color:var(--tyb); } .tyb .speaker{color:var(--tyb)}
+  .narr { border-left-color:var(--narr); } .narr .speaker{color:var(--narr)}
+  footer { text-align:center; color:var(--muted); font-size:12px; padding:20px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>罗密欧与朱丽叶</h1>
+  <div class="subtitle">Romeo and Juliet · B1 中文戏剧朗读本</div>
+  <div class="controls">
+    <button id="simp" class="active" onclick="setScript('simp')">简体中文</button>
+    <button id="trad" onclick="setScript('trad')">繁體中文</button>
+    <button id="pin" class="active" onclick="toggle('pinyin')">拼音：开</button>
+    <button id="eng" class="active" onclick="toggle('english')">English：开</button>
+  </div>
+</header>
+
+<main>
+  <section class="intro">
+    <strong>朗读练习 · Reading Practice</strong><br>
+    每个人选择一个角色。先读中文，再根据需要打开拼音和英文。
+    本剧为适合 B1 学习者的现代改写版，重点练习日常对白、情感表达和叙事。
+    <div class="roles">
+      <button class="role-filter active" onclick="filterRole('all',this)">全部角色</button>
+      <button class="role-filter" onclick="filterRole('rom',this)">罗密欧</button>
+      <button class="role-filter" onclick="filterRole('jul',this)">朱丽叶</button>
+      <button class="role-filter" onclick="filterRole('fri',this)">牧师</button>
+      <button class="role-filter" onclick="filterRole('cap',this)">凯普莱特</button>
+      <button class="role-filter" onclick="filterRole('nurse',this)">奶妈</button>
+      <button class="role-filter" onclick="filterRole('tyb',this)">提伯尔特</button>
+      <button class="role-filter" onclick="filterRole('narr',this)">旁白</button>
+    </div>
+  </section>
+
+  <div class="scene">第一幕：舞会 <small>Act I · The Ball</small></div>
+
+  <div class="line narr"><div class="speaker">旁白 · Narrator</div>
+    <div class="zh">今晚，凯普莱特家举行盛大的舞会。两个家族已经争斗很多年，但年轻人并不想继续这种仇恨。</div>
+    <div class="pinyin">Jīnwǎn, Kǎipǔláitè jiā jǔxíng shèngdà de wǔhuì. Liǎng gè jiāzú yǐjīng zhēngdòu hěn duō nián, dàn niánqīngrén bìng bù xiǎng jìxù zhè zhǒng chóuhèn.</div>
+    <div class="en">Tonight, the Capulets are holding a grand ball. The two families have fought for years, but the young people do not want to continue the hatred.</div>
+  </div>
+
+  <div class="line rom"><div class="speaker">罗密欧 · Romeo</div>
+    <div class="zh">我本来不想来这里。可是现在，我觉得今晚也许会发生一些特别的事情。</div>
+    <div class="pinyin">Wǒ běnlái bù xiǎng lái zhèlǐ. Kěshì xiànzài, wǒ juéde jīnwǎn yěxǔ huì fāshēng yìxiē tèbié de shìqing.</div>
+    <div class="en">I didn't want to come here. But now I feel that something special might happen tonight.</div>
+  </div>
+
+  <div class="line nurse"><div class="speaker">奶妈 · Nurse</div>
+    <div class="zh">朱丽叶，你别一直站在角落里。去跳舞吧！年轻的时候就应该开心一点。</div>
+    <div class="pinyin">Zhūlìyè, nǐ bié yìzhí zhàn zài jiǎoluò lǐ. Qù tiàowǔ ba! Niánqīng de shíhou jiù yīnggāi kāixīn yìdiǎn.</div>
+    <div class="en">Juliet, don't stand in the corner all evening. Go dance! You should enjoy yourself while you're young.</div>
+  </div>
+
+  <div class="line jul"><div class="speaker">朱丽叶 · Juliet</div>
+    <div class="zh">我不是不开心。我只是觉得，大家好像都在假装自己很快乐。</div>
+    <div class="pinyin">Wǒ bú shì bù kāixīn. Wǒ zhǐshì juéde, dàjiā hǎoxiàng dōu zài jiǎzhuāng zìjǐ hěn kuàilè.</div>
+    <div class="en">It's not that I'm unhappy. I just feel that everyone is pretending to be happy.</div>
+  </div>
+
+  <div class="line rom"><div class="speaker">罗密欧 · Romeo</div>
+    <div class="zh">你好。我可以请你跳一支舞吗？</div>
+    <div class="pinyin">Nǐ hǎo. Wǒ kěyǐ qǐng nǐ tiào yì zhī wǔ ma?</div>
+    <div class="en">Hello. May I ask you to dance with me?</div>
+  </div>
+
+  <div class="line jul"><div class="speaker">朱丽叶 · Juliet</div>
+    <div class="zh">当然可以。可是，你叫什么名字？</div>
+    <div class="pinyin">Dāngrán kěyǐ. Kěshì, nǐ jiào shénme míngzi?</div>
+    <div class="en">Of course. But what's your name?</div>
+  </div>
+
+  <div class="line rom"><div class="speaker">罗密欧 · Romeo</div>
+    <div class="zh">罗密欧。你呢？</div>
+    <div class="pinyin">Luómì'ōu. Nǐ ne?</div>
+    <div class="en">Romeo. And you?</div>
+  </div>
+
+  <div class="line jul"><div class="speaker">朱丽叶 · Juliet</div>
+    <div class="zh">朱丽叶。等等……你是蒙太古家的人？</div>
+    <div class="pinyin">Zhūlìyè. Děngděng…… nǐ shì Méngtàigǔ jiā de rén?</div>
+    <div class="en">Juliet. Wait... You're from the Montague family?</div>
+  </div>
+
+  <div class="line rom"><div class="speaker">罗密欧 · Romeo</div>
+    <div class="zh">是的。可是如果我早知道你是谁，我可能还是会来。</div>
+    <div class="pinyin">Shì de. Kěshì rúguǒ wǒ zǎo zhīdào nǐ shì shéi, wǒ kěnéng háishi huì lái.</div>
+    <div class="en">Yes. But even if I had known who you were, I might still have come.</div>
+  </div>
+
+  <div class="scene">第二幕：阳台 <small>Act II · The Balcony</small></div>
+
+  <div class="line narr"><div class="speaker">旁白 · Narrator</div>
+    <div class="zh">舞会结束后，朱丽叶站在阳台上。罗密欧没有离开，他悄悄走到花园里。</div>
+    <div class="pinyin">Wǔhuì jiéshù hòu, Zhūlìyè zhàn zài yángtái shàng. Luómì'ōu méiyǒu líkāi, tā qiāoqiāo zǒu dào huāyuán lǐ.</div>
+    <div class="en">After the ball, Juliet stands on the balcony. Romeo has not left; he quietly walks into the garden.</div>
+  </div>
+
+  <div class="line jul"><div class="speaker">朱丽叶 · Juliet</div>
+    <div class="zh">为什么偏偏是你？为什么你一定要属于那个家族？</div>
+    <div class="pinyin">Wèishénme piānpiān shì nǐ? Wèishénme nǐ yídìng yào shǔyú nàge jiāzú?</div>
+    <div class="en">Why does it have to be you? Why must you belong to that family?</div>
+  </div>
+
+  <div class="line rom"><div class="speaker">罗密欧 · Romeo</div>
+    <div class="zh">如果名字可以改变，我愿意换一个名字。可是我不能改变自己的心。</div>
+    <div class="pinyin">Rúguǒ míngzi kěyǐ gǎibiàn, wǒ yuànyì huàn yí gè míngzi. Kěshì wǒ bù néng gǎibiàn zìjǐ de xīn.</div>
+    <div class="en">If a name could be changed, I would choose another one. But I cannot change my heart.</div>
+  </div>
+
+  <div class="line jul"><div class="speaker">朱丽叶 · Juliet</div>
+    <div class="zh">我也喜欢你，可是我害怕。我们的家人不会同意。</div>
+    <div class="pinyin">Wǒ yě xǐhuan nǐ, kěshì wǒ hàipà. Wǒmen de jiārén bú huì tóngyì.</div>
+    <div class="en">I like you too, but I'm afraid. Our families will never agree.</div>
+  </div>
+
+  <div class="line rom"><div class="speaker">罗密欧 · Romeo</div>
+    <div class="zh">那我们就一起想办法。至少，让我们自己决定自己的未来。</div>
+    <div class="pinyin">Nà wǒmen jiù yìqǐ xiǎng bànfǎ. Zhìshǎo, ràng wǒmen zìjǐ juédìng zìjǐ de wèilái.</div>
+    <div class="en">Then let's find a way together. At least, let us decide our own future.</div>
+  </div>
+
+  <div class="line fri"><div class="speaker">牧师 · Friar</div>
+    <div class="zh">如果你们真的决定在一起，我愿意帮助你们。但你们必须明白，这不是一个简单的选择。</div>
+    <div class="pinyin">Rúguǒ nǐmen zhēnde juédìng zài yìqǐ, wǒ yuànyì bāngzhù nǐmen. Dàn nǐmen bìxū míngbai, zhè bú shì yí gè jiǎndān de xuǎnzé.</div>
+    <div class="en">If you truly decide to be together, I will help you. But you must understand that this is not a simple choice.</div>
+  </div>
+
+  <div class="scene">第三幕：冲突 <small>Act III · The Conflict</small></div>
+
+  <div class="line tyb"><div class="speaker">提伯尔特 · Tybalt</div>
+    <div class="zh">罗密欧！你竟然敢来到这里？你忘了我们的家族是什么关系吗？</div>
+    <div class="pinyin">Luómì'ōu! Nǐ jìngrán gǎn lái dào zhèlǐ? Nǐ wàng le wǒmen de jiāzú shì shénme guānxi ma?</div>
+    <div class="en">Romeo! How dare you come here? Have you forgotten what our families mean to each other?</div>
+  </div>
+
+  <div class="line rom"><div class="speaker">罗密欧 · Romeo</div>
+    <div class="zh">我不想和你打架。我们之间的仇恨不是我们自己选择的。</div>
+    <div class="pinyin">Wǒ bù xiǎng hé nǐ dǎjià. Wǒmen zhījiān de chóuhèn bú shì wǒmen zìjǐ xuǎnzé de.</div>
+    <div class="en">I don't want to fight you. The hatred between us is not something we chose.</div>
+  </div>
+
+  <div class="line tyb"><div class="speaker">提伯尔特 · Tybalt</div>
+    <div class="zh">少说漂亮话！你以为爱可以解决所有问题吗？</div>
+    <div class="pinyin">Shǎo shuō piàoliang huà! Nǐ yǐwéi ài kěyǐ jiějué suǒyǒu wèntí ma?</div>
+    <div class="en">Enough with the pretty words! Do you think love can solve every problem?</div>
+  </div>
+
+  <div class="line nurse"><div class="speaker">奶妈 · Nurse</div>
+    <div class="zh">够了！你们都是年轻人，为什么不能坐下来好好说话？</div>
+    <div class="pinyin">Gòu le! Nǐmen dōu shì niánqīngrén, wèishénme bù néng zuò xiàlái hǎohāo shuōhuà?</div>
+    <div class="en">Enough! You're all young. Why can't you sit down and talk calmly?</div>
+  </div>
+
+  <div class="line fri"><div class="speaker">牧师 · Friar</div>
+    <div class="zh">她说得对。真正困难的不是相爱，而是学会在冲突中保持理智。</div>
+    <div class="pinyin">Tā shuō de duì. Zhēnzhèng kùnnan de bú shì xiāng'ài, ér shì xuéhuì zài chōngtū zhōng bǎochí lǐzhì.</div>
+    <div class="en">She is right. The real difficulty is not loving each other, but staying rational during conflict.</div>
+  </div>
+
+  <div class="scene">第四幕：误会 <small>Act IV · The Misunderstanding</small></div>
+
+  <div class="line cap"><div class="speaker">凯普莱特 · Capulet</div>
+    <div class="zh">朱丽叶，你必须和一个我们家族选择的人结婚。这是为了你好。</div>
+    <div class="pinyin">Zhūlìyè, nǐ bìxū hé yí gè wǒmen jiāzú xuǎnzé de rén jiéhūn. Zhè shì wèile nǐ hǎo.</div>
+    <div class="en">Juliet, you must marry someone chosen by our family. It is for your own good.</div>
+  </div>
+
+  <div class="line jul"><div class="speaker">朱丽叶 · Juliet</div>
+    <div class="zh">可是爸爸，你有没有问过我真正想要什么？</div>
+    <div class="pinyin">Kěshì bàba, nǐ yǒu méiyǒu wèn guò wǒ zhēnzhèng xiǎng yào shénme?</div>
+    <div class="en">But Father, have you ever asked what I really want?</div>
+  </div>
+
+  <div class="line cap"><div class="speaker">凯普莱特 · Capulet</div>
+    <div class="zh">我只是希望你过得安全、幸福。</div>
+    <div class="pinyin">Wǒ zhǐshì xīwàng nǐ guò de ānquán, xìngfú.</div>
+    <div class="en">I only want you to be safe and happy.</div>
+  </div>
+
+  <div class="line jul"><div class="speaker">朱丽叶 · Juliet</div>
+    <div class="zh">幸福不能由别人替我决定。</div>
+    <div class="pinyin">Xìngfú bù néng yóu biérén tì wǒ juédìng.</div>
+    <div class="en">My happiness cannot be decided by someone else.</div>
+  </div>
+
+  <div class="line fri"><div class="speaker">牧师 · Friar</div>
+    <div class="zh">现在已经没有多少时间了。我们必须小心地计划下一步。</div>
+    <div class="pinyin">Xiànzài yǐjīng méiyǒu duōshao shíjiān le. Wǒmen bìxū xiǎoxīn de jìhuà xià yí bù.</div>
+    <div class="en">There isn't much time left. We must carefully plan our next step.</div>
+  </div>
+
+  <div class="scene">第五幕：真相 <small>Act V · The Truth</small></div>
+
+  <div class="line narr"><div class="speaker">旁白 · Narrator</div>
+    <div class="zh">计划没有按照他们想象的方式进行。消息没有及时送到罗密欧那里，一场悲剧几乎无法避免。</div>
+    <div class="pinyin">Jìhuà méiyǒu ànzhào tāmen xiǎngxiàng de fāngshì jìnxíng. Xiāoxi méiyǒu jíshí sòng dào Luómì'ōu nàlǐ, yì chǎng bēijù jīhū wúfǎ bìmiǎn.</div>
+    <div class="en">The plan does not go as they imagined. The message does not reach Romeo in time, and tragedy seems almost impossible to avoid.</div>
+  </div>
+
+  <div class="line rom"><div class="speaker">罗密欧 · Romeo</div>
+    <div class="zh">如果我早点知道真相，也许一切都会不一样。</div>
+    <div class="pinyin">Rúguǒ wǒ zǎodiǎn zhīdào zhēnxiàng, yěxǔ yíqiè dōu huì bù yíyàng.</div>
+    <div class="en">If I had known the truth earlier, perhaps everything would have been different.</div>
+  </div>
+
+  <div class="line jul"><div class="speaker">朱丽叶 · Juliet</div>
+    <div class="zh">别让我们的故事只剩下悲伤。请记住，我们曾经努力过。</div>
+    <div class="pinyin">Bié ràng wǒmen de gùshi zhǐ shèng xià bēishāng. Qǐng jìzhu, wǒmen céngjīng nǔlì guò.</div>
+    <div class="en">Don't let our story become only a story of sadness. Remember that we tried.</div>
+  </div>
+
+  <div class="line cap"><div class="speaker">凯普莱特 · Capulet</div>
+    <div class="zh">我终于明白了。我们所谓的保护，其实也可能伤害孩子。</div>
+    <div class="pinyin">Wǒ zhōngyú míngbai le. Wǒmen suǒwèi de bǎohù, qíshí yě kěnéng shānghài háizi.</div>
+    <div class="en">I finally understand. What we call protection can also hurt our children.</div>
+  </div>
+
+  <div class="line tyb"><div class="speaker">提伯尔特 · Tybalt</div>
+    <div class="zh">我们争斗了这么多年，最后到底得到了什么？</div>
+    <div class="pinyin">Wǒmen zhēngdòu le zhème duō nián, zuìhòu dàodǐ dédào le shénme?</div>
+    <div class="en">We have fought for so many years. What did we actually gain?</div>
+  </div>
+
+  <div class="line nurse"><div class="speaker">奶妈 · Nurse</div>
+    <div class="zh">也许现在还不算太晚。你们可以选择停止仇恨。</div>
+    <div class="pinyin">Yěxǔ xiànzài hái bú suàn tài wǎn. Nǐmen kěyǐ xuǎnzé tíngzhǐ chóuhèn.</div>
+    <div class="en">Perhaps it is not too late. You can choose to stop the hatred.</div>
+  </div>
+
+  <div class="line fri"><div class="speaker">牧师 · Friar</div>
+    <div class="zh">爱不能改变过去，但我们可以决定未来。希望这一次，你们真的记住这一点。</div>
+    <div class="pinyin">Ài bù néng gǎibiàn guòqù, dàn wǒmen kěyǐ juédìng wèilái. Xīwàng zhè yí cì, nǐmen zhēnde jìzhu zhè yìdiǎn.</div>
+    <div class="en">Love cannot change the past, but we can decide the future. I hope this time you truly remember that.</div>
+  </div>
+
+  <div class="line narr"><div class="speaker">旁白 · Narrator</div>
+    <div class="zh">两个家族终于停止了争斗。罗密欧与朱丽叶的故事成为一个提醒：仇恨可以持续很多年，但改变可以从今天开始。</div>
+    <div class="pinyin">Liǎng gè jiāzú zhōngyú tíngzhǐ le zhēngdòu. Luómì'ōu yǔ Zhūlìyè de gùshi chéngwéi yí gè tíxǐng: chóuhèn kěyǐ chíxù hěn duō nián, dàn gǎibiàn kěyǐ cóng jīntiān kāishǐ.</div>
+    <div class="en">The two families finally stop fighting. Romeo and Juliet's story becomes a reminder: hatred can last for years, but change can begin today.</div>
+  </div>
+</main>
+
+<footer>B1 Chinese Drama Reading · Romeo and Juliet</footer>
+
+<script>
+let script='simp';
+function setScript(s){
+  script=s;
+  document.getElementById('simp').classList.toggle('active',s==='simp');
+  document.getElementById('trad').classList.toggle('active',s==='trad');
+  document.querySelectorAll('.zh').forEach(el=>{
+    if(!el.dataset.simp) el.dataset.simp=el.textContent;
+    if(!el.dataset.trad) el.dataset.trad=toTraditional(el.dataset.simp);
+    el.textContent=s==='simp'?el.dataset.simp:el.dataset.trad;
+  });
+}
+function toTraditional(t){
+  const map={'这':'這','个':'個','家':'家','学':'學','习':'習','说':'說','话':'話','会':'會','时':'時','间':'間','为':'為','你':'你','们':'們','我':'我','他':'他','她':'她','爱':'愛','国':'國','来':'來','过':'過','还':'還','没':'沒','现':'現','在':'在','问':'問','题':'題','觉':'覺','得':'得','开':'開','心':'心','让':'讓','东':'東','西':'西','变':'變','换':'換','选':'選','择':'擇','别':'別','长':'長','对':'對','应':'應','该':'該','从':'從','与':'與','为':'為','发':'發','生':'生','乐':'樂','丽':'麗','阳':'陽','台':'臺','场':'場','听':'聽','见':'見','真':'真','实':'實','计':'計','划':'劃','终':'終','于':'於','结':'結','束':'束','难':'難','过':'過','伤':'傷','害':'害','孩':'孩','子':'子','恶':'惡','仇':'仇','恨':'恨','继':'繼','续':'續','须':'須','师':'師','爷':'爺','个':'個','岁':'歲','轻':'輕','静':'靜','进':'進','别':'別','间':'間','门':'門','问':'問','许':'許','头':'頭','虽':'雖','晚':'晚','还':'還','识':'識','记':'記','请':'請','带':'帶','给':'給','说':'說','谁':'誰','从':'從','该':'該','条':'條','来':'來','够':'夠','吗':'嗎'};
+  return t.split('').map(c=>map[c]||c).join('');
+}
+function toggle(which){
+  const on = !document.body.classList.contains('no-'+which);
+  document.body.classList.toggle('no-'+which,on);
+  document.querySelectorAll('.'+which).forEach(el=>el.classList.toggle('hidden',on));
+  const b=document.getElementById(which==='pinyin'?'pin':'eng');
+  b.classList.toggle('active',!on);
+  b.textContent=(which==='pinyin'?'拼音：':'English：')+(!on?'开':'关');
+}
+function filterRole(role,btn){
+  document.querySelectorAll('.role-filter').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.line').forEach(el=>{
+    el.classList.toggle('hidden',role!=='all'&&!el.classList.contains(role));
+  });
+}
+</script>
+</body>
+</html>
